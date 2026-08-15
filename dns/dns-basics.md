@@ -36,3 +36,13 @@ MX مربوط به ایمیل دامنه است و مشخص می‌کند ایم
 
 ```cmd
 nslookup google.com
+این دستور آدرس‌های IPv4 و IPv6 مربوط به دامنه را نشان داد.
+
+برای بررسی MX:
+
+nslookup -type=MX gmail.com
+در سیستم من این درخواست با Timeout مواجه شد.
+
+بعد DNS Server را مشخص کردم:
+
+nslookup -type=MX gmail.com 8.8.8.8
